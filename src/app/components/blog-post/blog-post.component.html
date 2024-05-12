@@ -1,0 +1,37 @@
+<section>
+    <h1>Blog post</h1>
+    <img ngSrc="/assets/images/logo.png" alt="Logo programación" width="50" height="50"/>
+    <article>
+        <section>
+            <h2>¿Qué es la Inteligencia Artificial?</h2>
+            <p>La inteligencia artificial (IA) es una rama de la informática que se ocupa de la creación de sistemas capaces de realizar tareas que normalmente requieren inteligencia humana. Estas pueden incluir aprendizaje, razonamiento y auto-corrección.</p>
+        </section>
+        <section>
+            <h2>Aplicaciones de la IA</h2>
+            <p>La IA tiene numerosas aplicaciones, incluyendo las siguientes:</p>
+            <ul>
+                <li>Reconocimiento de voz</li>
+                <li>Visión por computadora</li>
+                <li>Procesamiento del lenguaje natural</li>
+                <li>Robótica</li>
+                <li>Predicción y análisis de datos</li>
+            </ul>
+        </section>
+        <section>
+            <h2>El futuro de la IA</h2>
+            <p>El futuro de la IA promete transformaciones aún mayores en muchos campos, desde la medicina hasta la educación y el transporte. La capacidad de adaptarse y aprender de los datos hará que la tecnología sea aún más integrada en nuestra vida diaria.</p>
+        </section>
+    </article>
+    <h2>Comments section</h2>
+    
+    @defer (on viewport) {
+        <app-comments/>
+    
+    } @placeholder {
+    <p>Future comments to be loaded!</p>
+    
+    } @loading (minimum 2s){
+    <p>liading comments</p>
+    }
+    
+    </section>
